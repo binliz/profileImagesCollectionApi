@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::resource('profile',ProfileController::class);
-Route::resource('images',ImagesController::class)->only([
-    'index', 'store','destroy'
+Route::resource('profile', ProfileController::class);
+Route::resource('images', ImagesController::class)->only([
+    'index',
+    'store',
+    'destroy'
 ]);
 
-Route::get('profile/{id}/images',[\App\Http\Controllers\ProfileController::class,'showimages']);
+Route::get('profile/{id}/images', [\App\Http\Controllers\ProfileController::class, 'showimages']);

@@ -32,8 +32,8 @@ Vue.use(Vuex);
 
 import App from './components/AppComponent'
 
-import  {router} from  './router';
-import  {store} from  './store';
+import {router} from './router';
+import {store} from './store';
 
 
 const app = new Vue({

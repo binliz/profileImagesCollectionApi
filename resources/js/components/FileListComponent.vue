@@ -36,7 +36,7 @@
             },
             deleteImage: function (value) {
                 window.event.preventDefault();
-                this.$store.dispatch("REMOVE_IMAGE",value);
+                this.$store.dispatch("REMOVE_IMAGE", value);
             }
         }
 

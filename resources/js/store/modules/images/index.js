@@ -49,7 +49,7 @@ const actions = {
         let {data} = await window.axios.get(url);
         context.commit('SET_IMAGES', data);
     },
-    REMOVE_IMAGE: async (context, payload)=>{
+    REMOVE_IMAGE: async (context, payload) => {
         let {data} = await window.axios.delete(`/api/images/${payload}`);
         context.dispatch('RELOAD_IMAGES');
     }

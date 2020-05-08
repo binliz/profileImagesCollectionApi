@@ -93,7 +93,7 @@
 
                     } else {
                         this.$store.dispatch('SAVE_PROFILE', this.profile);
-                        this.$router.push({name: 'List'},()=>{
+                        this.$router.push({name: 'List'}, () => {
                             this.$store.dispatch('GET_PROFILES');
                         });
                     }
